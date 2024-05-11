@@ -136,6 +136,13 @@ html {
 
 
 
+.header-3.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
 
 
 
@@ -164,7 +171,7 @@ html {
 
 
 body {
-    height: 2005px;
+    height: 200rem;
 }
 
 @media screen and (max-width:1200px) {
