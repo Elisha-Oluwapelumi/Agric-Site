@@ -170,9 +170,6 @@ html {
 
 
 
-body {
-    height: 200rem;
-}
 
 @media screen and (max-width:1200px) {
     html {
