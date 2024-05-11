@@ -189,12 +189,19 @@ html {
     .header-3 .navbar {
         position: absolute;
         top: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         left: 0;
         right: 0;
         background: #eee;
         padding: 1rem 2rem;
         border-top: .1rem solid rgba(0, 0, 0, .3);
     }
+
+    .header-3 .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    
+    
 
     .header-3 .navbar a {
         display: block;
@@ -220,6 +227,11 @@ html {
 
 @media screen and (max-width:450px) {
     html {
-        font-size: 42%;
+        font-size: 50%;
     }
+    .header-1 {
+        display: none;
+    }
+
+    
 }
