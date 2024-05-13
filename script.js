@@ -30,5 +30,41 @@ var swiper = new Swiper('.home-slider', {
     loop: true,
 });
 
+ let countDate = new Date('May 12, 2024 00:00:00').getTime();
 
+function countDown() {
+    let now = new Date().getTime();
+    let gap = countDate - now;
+    // console.log();
+    let day=15
+    let hour=15
+    let min=15
+    let sec=15
+    // sec+=1
+    
+    setInterval(() => {
+        sec-=1
+        if(sec==0){
+            sec=60
+            min-=1
+        }
+        if(min==0){
+            min-60
+            hour-=1
+        }
+        if(hour==0){
+            hour=24
+            day-=1
+        }
+        console.log("seconds: ",sec, "mins: ",min);
+        second.innerHTML=sec
+        minute.innerHTML=min
+        hor.innerHTML=hour
+        days.innerHTML=day
+    }, 1000);
+    
+}
+
+
+countDown();
 
