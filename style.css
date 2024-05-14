@@ -533,23 +533,25 @@ section {
     display: flex;
     flex-wrap: wrap;
     border: 1rem solid rgba(0, 0, 0, 0.3);
-    justify-content: space-between; /* Example: adjust as needed */
+    justify-content: space-between;
 }
 
 .contact .rowss .map {
     flex: 1 1 40rem;
-    max-width: 100%; /* Ensure the map doesn't overflow */
+    max-width: 100%;
 }
 
 .contact .rowss form {
-    flex: 1 1 50%; /* Example: Adjust width of form as needed */
+    flex: 1 1 50%; 
     padding: 2rem;
-    box-sizing: border-box; /* Include padding in width calculation */
+    box-sizing: border-box; 
 }
 
 .contact .rowss form .inputBox {
-    position: relative;
+    position: relative; 
+    /* margin-bottom: 2rem;  */
 }
+
 
 .contact .rowss form .inputBox input,
 .contact .rowss form .inputBox textarea {
@@ -567,8 +569,100 @@ section {
 
 .contact .rowss form .inputBox input:focus,
 .contact .rowss form .inputBox textarea:focus {
-    border-bottom-color: var(--green); 
+    border-color: var(--green) !important; 
 }
+
+.contact .rowss form .inputBox label {
+    position: absolute;
+    top: 2.3rem;
+    left: 0; 
+   font-size: 1.7rem;
+}
+
+.contact .rowss form .inputBox input:focus ~ label,
+.contact .rowss form .inputBox textarea:focus ~ label,
+.contact .rowss form .inputBox input:valid ~ label,
+.contact .rowss form .inputBox textarea:valid ~ label {
+    top: -.1rem;
+    font-size:  1.5rem;
+    color: #666;
+} 
+
+.footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+.footer .footer-container .footinner {
+    flex: 1 1 25rem !important;
+}
+
+.footer .footer-container .footinner h3 {
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+
+.footer .footer-container .footinner p {
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+
+
+.footer .footer-container .footinner a {
+    color: #666;
+    font-size: 1.5rem;
+    display: block;
+    padding: 1rem 0;
+}
+
+
+.footer .footer-container .footinner a:hover {
+    text-decoration: underline;
+    color: var(--green);
+}
+
+footer .credit {
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top:  1rem solid rgba(0, 0, 0, .1);
+    text-align: center;
+    font-weight: normal;
+}
+
+.footer .credit span {
+    color: var(--green);
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 7.5rem;
+    right: 2rem;
+    z-index: 1000;
+    font-size: 3.5rem;
+    background: rgba(0, 255, 0, .1);
+    color: var(--green);
+    border-radius: .5rem;
+    border: 1rem solid rgba(0, 0, 0, .1);
+    padding: .5rem 1.5rem;
+    display: none;
+    
+}
+
+
+
+
+
+
+
+
+
 
 
 

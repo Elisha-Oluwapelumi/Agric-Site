@@ -1,6 +1,7 @@
 let menu = document.querySelector('#menu-bar')
 let navbar = document.querySelector('.navbar')
 let header = document.querySelector('.header-3')
+let scrolltop = document.querySelector('.sroll-top')
 
 menu.addEventListener('click', () => {
     menu.classList.toggle('fa-times')
@@ -15,6 +16,13 @@ window.onscroll = () => {
         header.classList.add('active')
     } else {
         header.classList.remove('active')
+    }
+
+    if (window.scrollY > 250) {
+        scrolltop.style.display = 'initial'
+    } else {
+        scrolltop.style.display = 'none'
+
     }
 }
 
