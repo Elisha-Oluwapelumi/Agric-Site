@@ -38,17 +38,15 @@ var swiper = new Swiper('.home-slider', {
     loop: true,
 });
 
- let countDate = new Date('May 12, 2024 00:00:00').getTime();
+ let countDate = new Date('October 12, 2024 04:00:00').getTime();
 
 function countDown() {
     let now = new Date().getTime();
     let gap = countDate - now;
-    // console.log();
     let day=15
     let hour=15
     let min=15
     let sec=15
-    // sec+=1
     
     setInterval(() => {
         sec-=1
@@ -67,7 +65,7 @@ function countDown() {
         console.log("seconds: ",sec, "mins: ",min);
         second.innerHTML=sec
         minute.innerHTML=min
-        hor.innerHTML=hour
+        hour.innerHTML=hour
         days.innerHTML=day
     }, 1000);
     
